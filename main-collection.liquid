@@ -1,0 +1,9 @@
+<section class="collection-wrapper">
+  <h1 class="collection-title">{{ collection.title }}</h1>
+
+  <div class="collection-grid">
+    {% for product in collection.products %}
+      {% render 'product-card', product: product %}
+    {% endfor %}
+  </div>
+</section>
